@@ -1,0 +1,250 @@
+/* Mengimpor gaya atau font eksternal ke dalam berkas gaya CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen HTML */
+*{
+    /* Mengatur margin/jarak luar elemen HTML sebesar 0 */
+    margin: 0;
+    /* Mengatur padding/elemen HTML sebesar 0 */
+    padding: 0;
+    /* Mengatur dan menghitung dimensi total dari sebuah elemen, terutama ketika padding dan border ditambahkan ke dalam elemen tersebut.  */
+    box-sizing: border-box;
+    /* Mengatur jenis font yang digunakan untuk website */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen HTML bagian body */
+body{
+    display: flex;
+    /* Mengatur distribusi ruang yang tersedia di sepanjang sumbu utama (main axis) sehingga seluruh elemen HTML bagian body berada di tengah-tengah kontainer */
+    justify-content: center;
+    /* Mengatur distribusi ruang yang tersedia di sepanjang sumbu silang (cross axis) sehingga seluruh elemen HTML bagian body berada di tengah-tengah kontainer */
+    align-items: center;
+    /* Mengatur ketinggian minimal seluruh elemen HTML bagian body setinggi 100vh */
+    min-height: 100vh;
+    /* Mengatur warna background/latar seluruh elemen HTML bagian body, yaitu menggunakan warna #fff */
+    background: #fff;
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen HTML dengan class box */
+.box{
+    /*  Mengatur posisi elemen relatif terhadap posisi normalnya dalam aliran dokumen pada elemen HTML dengan class box */
+    position: relative;
+    /* Mengatur width/lebar elemen HTML dengan class box, yaitu selebar 450px */
+    width: 450px;
+    /* Mengatur height/tinggi elemen HTML dengan class box, yaitu setinggi 550px */
+    height: 550px;
+    /* Membuat sudut-sudut elemen HTML dengan class box membulat dengan jari-jari sebesar 30px. */
+    border-radius: 30px;
+    /* Mengatur warna background/latar elemen HTML dengan class box, yaitu menggunakan warna #2d3951 */
+    background: #2d3951;
+    /* Mengatur padding/jarak dalam elemen HTML sebesar 30px (atas dan bawah elemen) dan 50px (kanan dan kiri elemen) */
+    padding: 30px 50px;
+    /* Mengatur peletakan dan pewarnaan box shadow/bayangan dari elemen HTML dengan class box */
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25)
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen h2 HTML */
+h2{
+    /* Mengatur lebar elemen h2 HTML sebesar 100% */
+    width: 100%;
+    /* Mengatur ketebalan/ukuran font sebesasr 600 */
+    font-weight: 600;
+    /* Mengatur posisi elemen h2 HTML, yaitu berada di tengah */
+    text-align: center;
+    /* Mengatur warna elemen h2 HTML, yaitu #fff */
+    color: #fff;
+    /* Mengatur ukuran font sebesar 1.75 rem */
+    font-size: 1.75rem;
+    /* Mengatur margin bottom/jarak luar elemen HTML (bawah) sebesar 10px  */
+    margin-bottom: 10px;
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen HTML dengan id inputBx */
+#inputBx{
+    /*  Mengatur posisi elemen relatif terhadap posisi normalnya dalam aliran dokumen pada elemen HTML dengan id inputBx */
+    position: relative;
+    /* Mengatur lebar elemen HTML dengan id inputBX sebesar 100% */
+    width: 100%;
+    /* Mengatur border elemen HTML dengan id inputBx, yaitu none/tidak ada */
+    border: none;
+    /* Mengatur garis pinggir (outline) elemen HTML dengan id inputBx untuk menghilangkan atau menyembunyikannya secara default muncul saat sebuah elemen mendapat fokus */
+    outline: none;
+    /* Mengatur padding/jarak dalam elemen HTML dengan id inputBx sebesar 15px (atas dan bawah elemen) dan 20px (kanan dan kiri elemen) */
+    padding: 15px 20px;
+    /* Membuat sudut-sudut elemen HTML dengan id inputBx membulat dengan jari-jari sebesar 30px. */
+    border-radius:30px;
+    /* Mengatur ukuran font dalam elemen HTML dengan id inputBx sebessar 1em */
+    font-size: 1em;
+    /* Mengatur peletakan dan pewarnaan box shadow/bayangan dari elemen HTML dengan id inputBx */
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), 
+    inset 2px 2px 5px rgba(0,0,0,0.5), 
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen li HTML dengan class box */
+.box li{
+    /*  Mengatur posisi elemen relatif terhadap posisi normalnya dalam aliran dokumen pada elemen li HTML dengan class box */
+    position: relative;
+    /* Mengatur lebar elemen li HTML dengan class box dengan menggunakan kalkulasi dengan lebar elemen diatur sebagai 100% dari lebar elemen induknya, dikurangi 40px. */
+    width: calc(100% - 40px);
+    /* Mengatur perilaku tata letak elemen li HTML dengan class box menjadi model kotak fleksibel (flexbox).  */
+    display: flex;
+    /* Mengatur distribusi ruang yang tersedia di sepanjang sumbu silang (cross axis) sehingga seluruh  elemen li HTML dengan class box berada di tengah-tengah kontainer */
+    align-items: center;
+    /* Mengatur background/latar elemen li HTML dengan class box, yaitu #f8d6ad */
+    background: #f8d6ad;
+    /* Mengatur margin/jarak luar elemen li HTML dengan class box  sebesar 15px (atas dan bawah) dan 0 (kanan dan kiri) */
+    margin: 15px 0;
+    /* Mengatur padding/jarak dalam elemen  elemen li HTML dengan class box sebesar 10px (atas), 10px (kanan), 10px(bawah), dan 45px (kiri) */
+    padding: 10px 10px 10px 45px;
+    /* Mengatur ketinggian minimal seluruh elemen li HTML dengan class box setinggi 45px */
+    min-height: 45px;
+    /* Mengatur tampilan kursor (pointer) saat berada di atas suatu elemen li HTML dengan class box dengan hasil akhir  memberikan indikasi kepada pengguna bahwa elemen tersebut dapat diklik atau berinteraksi. */
+    cursor: pointer;
+    /* Membuat sudut-sudut elemen li HTML dengan class box membulat dengan jari-jari sebesar 22.5px. */
+    border-radius: 22.5px;
+    /* Mengatur warna elemen li HTML dengan class box, yaitu #fff */
+    color: #fff;
+    /* Mengatur peletakan dan pewarnaan box shadow/bayangan dari elemen li HTML dengan class box */
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), 
+    inset 2px 2px 5px rgba(0,0,0,0.5), 
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen i HTML yang berada di dalam elemen li HTML dengan class box */
+.box li i {
+    /*  Mengatur posisi elemen absolute terhadap posisi normalnya dalam aliran dokumen pada elemen i HTML yang berada di dalam elemen li HTML dengan class box */
+    position: absolute;
+    /* Mengatur posisi elemen i HTML yang berada di dalam elemen li HTML dengan class box sejauh 40px dari sebelah kanan posisi normalnya. */
+    right: -40px;
+    /* Mengatur lebar elemen i HTML yang berada di dalam elemen li HTML dengan class box HTML sebesar 30px */
+    width: 30px;
+    /* Mengatur height/tinggi elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen, yaitu setinggi 550px */
+    height: 30px;
+    /* Mengatur elemen i HTML yang berada di dalam elemen li HTML dengan class box menjadi kontainer fleksibel (flex container) yang memungkinkan pengaturan tata letak flexbox.  */
+    display: flex;
+    /* Mengatur distribusi ruang yang tersedia di sepanjang sumbu utama (main axis) sehingga elemen i HTML yang berada di dalam elemen li HTML dengan class box berada di tengah-tengah kontainer */
+    justify-content: center;
+    /* Mengatur distribusi ruang yang tersedia di sepanjang sumbu silang (cross axis) sehingga elemen i HTML yang berada di dalam elemen li HTML dengan class box berada di tengah-tengah kontainer */
+    align-items: center;
+    /* Mengatur warna background/latar elemen i HTML yang berada di dalam elemen li HTML dengan class box , yaitu menggunakan warna #ff2c74 */
+    background: #ff2c74;
+    /* Membuat sudut-sudut elemen i HTML yang berada di dalam elemen li HTML dengan class box membulat dengan jari-jari sebesar 50% */
+    border-radius: 50%;
+    /* Mengatur peletakan dan pewarnaan box shadow/bayangan dari elemen i HTML yang berada di dalam elemen li HTML dengan class box */
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px
+    rgba(255,255,255,0.25), inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen */
+.box li i::before{
+    /* Mengatur tidak adanya konten yang disisipkan pada elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen */
+    content: '';
+    /*  Mengatur posisi elemen absolute terhadap posisi normalnya dalam aliran dokumen pada elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen*/
+    position: absolute;
+    /* Mengatur lebar elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen sebesar 15px */
+    width: 15px;
+    /* Mengatur height/tinggi  elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen, yaitu setinggi 2px */
+    height: 2px;
+    /* Mengatur warna background/latar elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen, yaitu menggunakan warna #fff */
+    background: #fff;
+    /* Mengatur posisi elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen sebesar 45 derajat dari posisi awalnya.  */
+    transform: rotate(45deg);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen  */
+.box li i::after{
+    /* Mengatur tidak adanya konten yang disisipkan pada elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen */
+    content: '';
+    /*  Mengatur posisi elemen absolute terhadap posisi normalnya dalam aliran dokumen pada elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen*/
+    position: absolute;
+    /* Mengatur lebar elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen selebar 15px */
+    width: 15px;
+    /* Mengatur height/tinggi elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen, yaitu setinggi 2px */
+    height: 2px;
+    /* Mengatur warna background/latar elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen, yaitu menggunakan warna #fff */
+    background: #fff;
+    /* Mengatur posisi elemen i HTML yang berada di dalam elemen li HTML dengan class box dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen sebesar -45 derajat dari posisi awalnya.  */
+    transform: rotate(-45deg);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen */
+.box li::before{
+    /* Mengatur tidak adanya konten yang disisipkan pada elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen */
+    content: '';
+    /*  Mengatur posisi elemen absolute terhadap posisi normalnya dalam aliran dokumen pada elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen*/
+    position: absolute;
+    /* Mengatur posisi elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen sejauh 8px dari sebelah kiri posisi normalnya. */
+    left: 8px;
+    /* Mengatur lebar elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen selebar 30px */
+    width: 30px;
+    /* Mengatur height/tinggi elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen, yaitu setinggi 30px */
+    height: 30px;
+    /* Mengatur warna background/latar elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen, yaitu menggunakan warna #2f363e */
+    background: #2f363e;
+    /* Membuat sudut-sudut elemen li HTML dengan class box dengan target pseudo-element `::before` / sebelum isi aktual dari suatu elemen membulat dengan jari-jari sebesar 50% */
+    border-radius: 50%;
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen li dan i HTML dengan class box dengan target kondisi `done` */
+.box li.done{
+    /* Mengatur warna background/latar elemen li dan i HTML dengan class box dengan target kondisi `done`, yaitu menggunakan warna #687a86 */
+    background: #687a86;
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen */
+.box li.done:after{
+    /* Mengatur tidak adanya konten yang disisipkan pada eelemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen */
+    content: '';
+    /*  Mengatur posisi elemen absolute terhadap posisi normalnya dalam aliran dokumen pada elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen*/
+    position: absolute;
+    /* Mengatur posisi elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen sejauh 8px dari sebelah kiri posisi normalnya. */
+    left: 16px;
+    /* Mengatur lebar elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen selebar 12px */
+    width: 12px;
+    /* Mengatur height/tinggi elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen, yaitu setinggi 6px */
+    height: 6px;
+    /* Mengatur lebar batas kiri elemen, ketebaran lebar border yaitu 2px, jenis garis border yaitu solid, dan warna border yaitu #fff pada elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen */
+    border-left: 2px solid #fff;
+    /* Mengatur lebar batas bawah elemen, ketebaran lebar border yaitu 2px, jenis garis border yaitu solid, dan warna border yaitu #fff pada elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen */
+    border-bottom: 2px solid #fff;
+    /* Mengatur posisi elemen li HTML dengan class box dengan target kondisi `done` dan dengan target pseudo-element `::after` / setelah isi aktual dari suatu elemen sebesar 315 derajat dari posisi awalnya.  */
+    transform: rotate(315deg);
+}
+
+/* Mengatur gaya yang akan diterapkan ke seluruh elemen HTML dengan id list */
+#list{
+    /*  Mengatur posisi elemen relatif terhadap posisi normalnya dalam aliran dokumen pada elemen id list*/
+    position: relative;
+    /* Mengatur margin/jarak luar elemen HTML (atas) dengan id list sebesar 20px */
+    margin-top: 20px;
+    /* Mengatur height/tinggi elemen HTML dengan id list, yaitu setinggi 350px */
+    height: 350px;
+    /* Mengatur perilaku overflow pada sumbu vertikal (y-axis) secara auto dari elemen HTML dengan id list */
+    overflow-y: auto;
+    /* Mengatur padding/jarak dalam elemen HTML dengan is list sebesar 10 px di sisi sebelah kanan dari suatu */
+    padding-right: 10px;
+}
+
+/* Mengatur gaya dari bagian track (jalur) dari scrollbar dalam elemen */
+::-webkit-scrollbar-track{
+    /* Mengatur peletakan dan pewarnaan box shadow/bayangan dari bagian track (jalur) dari scrollbar dalam elemen*/
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Mengatur gaya dari seluruh scrollbar dalam elemen  */
+::-webkit-scrollbar{
+    /* Mengatur width/lebar seluruh scrollbar dalam elemen HTML, yaitu selebar 5px */
+    width: 5px;
+}
+
+/* Mengatur gaya dari thumb (tombol geser) dari scrollbar dalam elemen  */
+::-webkit-scrollbar-thumb{
+    /* Mengatur background/latar elemen HTML dari thumb (tombol geser) dari scrollbar dalam elemen, yaitu #fff*/
+    background: #fff;
+}
